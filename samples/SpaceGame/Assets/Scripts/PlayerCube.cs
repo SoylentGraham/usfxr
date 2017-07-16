@@ -34,7 +34,7 @@ public class PlayerCube : MonoBehaviour {
 		lastTimeFired = now;
 
 		if (now > lastTimeFiredAudio + 1f/SHOTS_WITH_AUDIO_PER_SECOND) {
-			if (Main.isModeMutated) {
+			if (SpaceGameMain.isModeMutated) {
 				synthFire.PlayMutated(0.08f, 15);
 			} else {
 				synthFire.Play();
